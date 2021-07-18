@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Momentum App</title>
+</head>
+
+<body>
+    <div id="screen">
+        <div id="above">
+            <form class="search_form" action="http://www.google.co.kr/search" target="_blank">
+                <span class="material-icons">
+                    search
+                </span>
+                <input type="text" name="q" maxlength=255 value="" autocomplete="off">
+            </form>
+            <div id="weather">
+                <div id="weather__status">                    
+                    <span class="weather__icon"></span>
+                    <span class="weather__temp"></span>
+                </div><!--weather__status-->
+                <spa class="weather__city"n></span>
+            </div><!--weather end-->
+        </div>
+        <div id="clock-wrap">
+            <h2 id="clock">00:00</h2>
+            <span id="seconds"></span>
+        </div><!--clock-wrap-->
+    
+        <div id="login-wrap">
+            <form id="login-form" class="hidden">
+                <input required maxlength="15" type="text" placeholder="What is your name?">
+                <button>LogIn</button>
+            </form>
+        </div><!--login-wrap-->
+        
+        <div id="greeting">            
+            <span id="greeting__hello" class="hidden"></span>
+            <span id="greeting__username" class="hidden"></span>
+        </div>
+
+
+        <form id="todo-form">
+            <input type="text" placeholder="Write a To do and Press Enter" required>
+        </form>
+        <ul id="todo-list"></ul>
+
+        <div id="quote">
+            <span></span>
+            <span></span>
+        </div>
+    </div><!--screen-->
+    
+
+
+
+
+    
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+
+</html>

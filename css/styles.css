@@ -1,0 +1,234 @@
+body {
+  color: white;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#screen {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#above {
+  width: 100%;
+  height: 25%;
+  display: flex;
+}
+.material-icons {
+  vertical-align: middle;
+}
+.hidden {
+  display: none;
+}
+.bgimg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.search_form {
+  position: relative;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.9);
+}
+.search_form > span {
+  position: absolute;
+  left: 6%;
+  top: 4%;
+}
+.search_form > input {
+  font-size: 1em;
+  margin-top: 5%;
+  margin-left: 1em;
+  color: inherit;
+  padding: 0% 10% 5% 20%;
+  padding-left: 20%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  transition: 400ms;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+.search_form:hover > input {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+#clock-wrap {
+  text-align: center;
+}
+#clock {
+  font-size: 1100%;
+  line-height: 1;
+  font-weight: 600;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  display: inline;
+}
+#seconds {
+  padding-left: 20px;
+  font-size: 400%;
+  font-weight: 400;
+}
+#login-form {
+  cursor: default;
+  width: 100%;
+  align-items: center;
+}
+#login-form > input {
+  color: white;
+  padding: 1em 2em;
+  padding-left: 0.63em;
+  font-size: 1.2em;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  transition: 200ms;
+}
+#login-form > input:focus,
+#todo-form > input:focus,
+.search_form > input:focus {
+  outline: none;
+  border-bottom: 2px solid rgba(255, 255, 255);
+}
+#login-form > input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.2em;
+}
+#login-form > button {
+  color: white;
+  padding: 0.5em 1em;
+  background: transparent;
+  border: 1px solid white;
+  font-size: 1em;
+  transition: 200ms;
+}
+#login-form > button:hover {
+  background: white;
+  color: #333;
+}
+#greeting {
+  display: flex;
+}
+#greeting__hello,
+#greeting__username {
+  font-size: 3em;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+#greeting__hello {
+  padding-right: 10px;
+}
+#quote {
+  margin-top: 1.25em;
+  text-align: center;
+  line-height: 1.2em;
+  font-weight: 500;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+#quote > span:first-child {
+  display: block;
+}
+#todo-form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#todo-form > input {
+  box-sizing: border-box;
+  margin: 0 1em;
+  width: 500px;
+  padding: 1em 2em;
+  text-align: center;
+  font-size: 110%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  transition: 200ms;
+}
+#todo-form > input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 140%;
+  text-align: center;
+}
+#todo-list {
+  text-align: center;
+  width: 100%;
+  margin-top: 1.25em;
+}
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 150%;
+  font-weight: 500;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  padding: 0.63em;
+}
+li > button {
+  padding-left: 5px;
+  background: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+#quote {
+  position: relative;
+  bottom: 0.63em;
+}
+
+html {
+  font-size: 100%;
+}
+body {
+  font-size: 1em;
+}
+
+#weather {
+  padding-top: 1em;
+  position: absolute;
+  right: 1em;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+.weather__icon {
+  font-size: 2em;
+}
+.weather__temp {
+  font-size: 2em;
+}
+
+/* 미디어쿼리 */
+
+@media (min-width: 280px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (min-width: 320px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media (min-width: 500px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media (min-width: 700px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 100%;
+  }
+}
