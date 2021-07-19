@@ -17,7 +17,7 @@
 <br>
 ###### 닉네임과 일정을 입력하면 localstorage에 저장됩니다
 
-##### 데스크탑(구글크롬 1920 x 1080) <br>
+##### 데스크탑(구글크롬 1920 x 1080 ) <br>
 ![데스크탑](https://user-images.githubusercontent.com/55690712/126136257-6188dfa4-727e-4022-86b2-680a6bc9e7bc.PNG)
 <br>
 ##### 모바일(갤럭시 a9 pro)
